@@ -1,25 +1,25 @@
 console.log("Empezamos!!")
 
-function currentTime(){
+function showTime(){
     let date = new Date()
     let hh = date.getHours()
     let mm = date.getMinutes()
     let ss = date.getSeconds()
 
-        hh=(hh < 10) ? "0" + hh : hh;
-        mm=(mm < 10) ? "0" + mm : mm;
-        ss= (ss < 10) ? "0" + ss :ss;
+    hh=(hh < 10) ? "0" + hh : hh;
+    mm=(mm < 10) ? "0" + mm : mm;
+    ss= (ss < 10) ? "0" + ss :ss;
 
-        let time = `${hh}:${mm}:${ss}`
-        
-        
+    let time = `${hh}:${mm}:${ss}`   
+    document.getElementById("watch").innerHTML=time
 
-        }
+    }
 
-        setInterval(currentTime, 1000);
+      
 
-        function currentDate(){
-           const dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+    function showDate(){
+        let date = new Date();
+        const dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
         const meses = ["Enero","Febrero","Marzo","Abríl","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
         
         let dayName = dias[date.getDay()];
@@ -28,12 +28,18 @@ function currentTime(){
         let year = date.getFullYear();
         
         let fullDate = `${dayName},${day} de ${month} de ${year}`;
-        document.getElementById("watch").innerHTML= `${fullDate} <br> ${time}`; 
+        document.getElementById("calendar").innerHTML= fullDate;
         }
 
-        setInterval(currentDate)
+        setInterval(showTime,1000);
+        setInterval(showDate,60000);
 
+        showTime();
+        showDate();
 
+        let Mayusculas=[];
+        let Minusculas=[];
+        let simbols = [];
 
 
 
