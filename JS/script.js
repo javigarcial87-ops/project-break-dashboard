@@ -11,17 +11,27 @@ function currentTime(){
         ss= (ss < 10) ? "0" + ss :ss;
 
         let time = `${hh}:${mm}:${ss}`
-        const days=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
-        const months= ["Enero","Febrero"."Marzo","Abríl","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
-        let watch = document.getElementById("watch")
-        watch.innerHTML= time;
+        
+        
 
         }
 
         setInterval(currentTime, 1000);
 
+        function currentDate(){
+           const dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+        const meses = ["Enero","Febrero","Marzo","Abríl","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+        
+        let dayName = dias[date.getDay()];
+        let day = date.getDate();
+        let month = meses[date.getMonth()];
+        let year = date.getFullYear();
+        
+        let fullDate = `${dayName},${day} de ${month} de ${year}`;
+        document.getElementById("watch").innerHTML= `${fullDate} <br> ${time}`; 
+        }
 
-
+        setInterval(currentDate)
 
 
 
