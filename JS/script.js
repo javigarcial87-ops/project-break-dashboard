@@ -10,7 +10,8 @@ function currentTime(){
         mm=(mm < 10) ? "0" + mm : mm;
         ss= (ss < 10) ? "0" + ss :ss;
 
-        let time = hh + ":" + mm + ":" +ss;
+        let time = `${hh}:${mm}:${ss}`
+        const days=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"]
         let watch = document.getElementById("watch")
         watch.innerHTML= time;
 
