@@ -12,7 +12,7 @@ function currentTime(){
 
         let time = `${hh}:${mm}:${ss}`
         const days=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
-        const months= ["Enero","Febreo"."Marzo","Abríl","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+        const months= ["Enero","Febrero"."Marzo","Abríl","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
         let watch = document.getElementById("watch")
         watch.innerHTML= time;
 
