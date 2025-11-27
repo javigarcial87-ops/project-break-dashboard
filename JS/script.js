@@ -1,4 +1,4 @@
-// console.log("Empezamos!!")
+console.log("Empezamos!!")
 
 function currentTime(){
     let date = new Date()
