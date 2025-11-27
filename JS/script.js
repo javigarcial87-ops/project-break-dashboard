@@ -1,7 +1,7 @@
-console.log("Empezamos!!")
+// console.log("Empezamos!!")
 
 function currentTime(){
-    let date = new date()
+    let date = new Date()
     let hh = date.getHours()
     let mm = date.getMinutes()
     let ss = date.getSeconds()
