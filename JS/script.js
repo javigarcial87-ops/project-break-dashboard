@@ -37,10 +37,11 @@ function showTime(){
         showTime();
         showDate();
 
-        let Mayusculas=[];
-        let Minusculas=[];
-        let simbols = [];
-
+        let Mayus =["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+        let Minus =["abcdefghijklmnopqrstuvwxyz"];
+        let number =["0123456789"];
+        let simbols = ["!@#$%^&*()-_=+"];
+        
 
 
 
