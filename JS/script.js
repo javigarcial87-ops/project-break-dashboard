@@ -41,6 +41,18 @@ function showTime(){
         let Minus =["abcdefghijklmnopqrstuvwxyz"];
         let number =["0123456789"];
         let simbols = ["!@#$%^&*()-_=+"];
+
+        function password() {
+            const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
+            const maxLength = 16;
+            let contrasena ="";
+
+            for (let i =0; i<maxLength;)
+
+
+
+
+        }
         
 
 
