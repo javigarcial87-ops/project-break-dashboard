@@ -47,9 +47,12 @@ function showTime(){
             const maxLength = 16;
             let contrasena ="";
 
-            for (let i =0; i<maxLength;)
+            for (let i =0; i<maxLength; i++) {
+                let randomPass = Math.floor(Math.random() *caracteres.maxLength);
+                contrasena = caracteres[randomPass];
+            }
 
-
+            document.getElementById("contrasena").value= contrasena
 
 
         }
