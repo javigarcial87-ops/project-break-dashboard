@@ -1,4 +1,6 @@
 console.log("Empezamos!!")
+
+
 //<------------------------------------------RELOJ------------------------------------------------------>
 function showTime(){
     let date = new Date()
@@ -37,14 +39,19 @@ function showTime(){
         showTime();
         showDate();
 
-        let Mayus =["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-        let Minus =["abcdefghijklmnopqrstuvwxyz"];
-        let number =["0123456789"];
-        let simbols = ["!@#$%^&*()-_=+"];
+        
 
 
 //<-------------------------------CONTRASEÑA SEGURA-------------------------------------------------------->
 
+
+
+
+
+        let Mayus =["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+        let Minus =["abcdefghijklmnopqrstuvwxyz"];
+        let number =["0123456789"];
+        let simbols = ["!@#$%^&*()-_=+"];
 
 
 
@@ -53,8 +60,8 @@ function showTime(){
             const maxLength = 16;
             let contrasena ="";
 
-            for (let i =0; i<maxLength; i++) {
-                let randomPass = Math.floor(Math.random() *caracteres.maxLength);
+            for (let i =0; i < maxLength; i++) {
+                let randomPass = Math.floor(Math.random() * caracteres);
                 contrasena = caracteres[randomPass];
             }
 
@@ -63,10 +70,21 @@ function showTime(){
 
         }
         
+//<-----------------------------------MIS LINKS FAVORITOS------------------------------------------------------------->
+
+const urlMovies = "https://www.imdb.com/es-es/"
+const urlGames = "https://www.mobygames.com/"
+const urlBooks = "https://www.goodreads.com/"
+const urlCook =  "https://www.allrecipes.com/"
+
+
+
+
+
 
 //<------------------------------------CLIMA/TEMPORAL------------------------------------------------------------->
 
-
+const urlClima = "https://www.weatherapi.com/"
 
 
 
