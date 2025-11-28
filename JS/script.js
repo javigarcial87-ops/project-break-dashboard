@@ -1,5 +1,5 @@
 console.log("Empezamos!!")
-
+//<------------------------------------------RELOJ------------------------------------------------------>
 function showTime(){
     let date = new Date()
     let hh = date.getHours()
@@ -15,7 +15,7 @@ function showTime(){
 
     }
 
-      
+ //<----------------------------------CALENDARIO FECHAS------------------------------------------------------->     
 
     function showDate(){
         let date = new Date();
@@ -42,6 +42,12 @@ function showTime(){
         let number =["0123456789"];
         let simbols = ["!@#$%^&*()-_=+"];
 
+
+//<-------------------------------CONTRASEÑA SEGURA-------------------------------------------------------->
+
+
+
+
         function password() {
             const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
             const maxLength = 16;
@@ -57,6 +63,24 @@ function showTime(){
 
         }
         
+
+//<------------------------------------CLIMA/TEMPORAL------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
