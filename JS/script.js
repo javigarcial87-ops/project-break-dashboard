@@ -48,15 +48,15 @@ function showTime(){
 
 
 
-        let Mayus =["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-        let Minus =["abcdefghijklmnopqrstuvwxyz"];
+        let Mayus =["ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"];
+        let Minus =["abcdefghijklmnñopqrstuvwxyz"];
         let number =["0123456789"];
         let simbols = ["!@#$%^&*()-_=+"];
 
 
 
         function password() {
-            const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
+            const caracteres = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%^&*()-_=+";
             const maxLength = 16;
             let contrasena ="";
 
