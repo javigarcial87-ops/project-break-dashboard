@@ -18,6 +18,14 @@ function getMensajeReloj (){
         return "Buenos días, a codear se ha dicho!!"
     }else if (total>= toMin(12,1)&& total<=toMin(14,0)){
         return "Sigue un rato, pero...habrá que comer no??"
+    }else if (total>= toMin(14,1)&& total<=toMin(16,0)) {
+        return "Digestión"
+    }else if (total>=(16,1)&& total<=(18.0)){
+        return "Un ratito más de codeo"
+    }else if (total>=(18,1)&& total<=toMin(22,0)){
+        return "Hay que empezar a plantearse un descanso"
+    }else {
+        return "Buenas noches, a descansar...ZZzzz"
     }
 
 
