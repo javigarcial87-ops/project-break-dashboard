@@ -28,27 +28,7 @@ function getMensajeReloj (){
         return "Buenas noches, a descansar...ZZzzz"
     }
 
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 function showTime(){
@@ -63,7 +43,7 @@ function showTime(){
 
     let time = `${hh}:${mm}:${ss}`   
     document.getElementById("watch").innerHTML=time
-
+    document.getElementById("mensaje").innerHTML=getMensajeReloj()
     }
 
  //<----------------------------------CALENDARIO Y FECHAS------------------------------------------------------->     
