@@ -2,6 +2,26 @@ console.log("Empezamos!!")
 
 
 //<------------------------------------------RELOJ------------------------------------------------------>
+
+function getMensajeReloj (){
+    const date = new Date()
+    const h = date.getHours()
+    const m =date.getMinutes()
+    const total =  h*60 +m
+
+    const toMin
+}
+
+
+
+
+
+
+
+
+
+
+
 function showTime(){
     let date = new Date()
     let hh = date.getHours()
