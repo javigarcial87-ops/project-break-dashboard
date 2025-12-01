@@ -9,7 +9,28 @@ function getMensajeReloj (){
     const m =date.getMinutes()
     const total =  h*60 +m
 
-    const toMin
+    const toMin = (hh,mm)=>hh*60 + mm
+
+
+    if (total>= toMin(0,1) && total<= toMin(7,0)){
+        return "A descansar, hasta mañana"
+    }else if (total>=toMin(7,1)&& total<=toMin(12,0)){
+        return "Buenos días, a codear se ha dicho!!"
+    }else if (total>= toMin(12,1)&& total<=toMin(14,0)){
+        return "Sigue un rato, pero...habrá que comer no??"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
