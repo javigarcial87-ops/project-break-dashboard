@@ -43,7 +43,7 @@ function showTime(){
 
     let time = `${hh}:${mm}:${ss}`   
     document.getElementById("watch").innerHTML=time
-    document.getElementById("mensaje").innerHTML=getMensajeReloj()
+    document.getElementById("frase").innerHTML=getMensajeReloj()
     }
 
  //<----------------------------------CALENDARIO Y FECHAS------------------------------------------------------->     
