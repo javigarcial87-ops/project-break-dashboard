@@ -78,33 +78,45 @@ function generarPass(){
         alert("la longitud debe estar entre 12 y 50")
         return
     }
-}
-
-
-
 
 
         let Mayus =["ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"];
         let Minus =["abcdefghijklmnñopqrstuvwxyz"];
         let number =["0123456789"];
         let simbols = ["!@#$%^&*()-_=+"];
-        let pool = Mayus + Minus + numbe+ simbols;
+        let pool = Mayus + Minus + number+ simbols;
 
 
-        function password() {
-            const caracteres = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%^&*()-_=+";
-            const maxLength = 16;
-            let password ="";
-
-            for (let i =0; i < maxLength; i++) {
-                let randomPass = Math.floor(Math.random() * caracteres);
-                password = caracteres[randomPass];
-            }
-
-            document.getElementById("contrasena").value= password
+    password += getrandomCharacter(Mayus)
+    password += getrandomCharacter(Minus)
+    password += getrandomCharacter(number)
+    password += getrandomCharacter(simbols)
 
 
-        }
+    for(let i =4;i <longitudPass; i++){
+        password +=getrandomCharacter(pool)
+        
+    }
+
+    password = getrandomCharacter(password)
+
+    mostrarPassword.innerHTML(password)
+
+}
+        // function password() {
+        //     const caracteres = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%^&*()-_=+";
+        //     const maxLength = 16;
+        //     let password ="";
+
+        //     for (let i =0; i < maxLength; i++) {
+        //         let randomPass = Math.floor(Math.random() * caracteres);
+        //         password = caracteres[randomPass];
+        //     }
+
+        //     document.getElementById("contrasena").value= password
+
+
+        // }
         
 //<-----------------------------------MIS LINKS FAVORITOS------------------------------------------------------------->
 
