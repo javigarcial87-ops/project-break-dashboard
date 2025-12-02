@@ -22,23 +22,23 @@ function generarPass() {
 
     let password = "";
 
-    // Asegurar al menos uno de cada tipo
+    
     password += getrandomCharacter(Mayus);
     password += getrandomCharacter(Minus);
     password += getrandomCharacter(number);
     password += getrandomCharacter(simbols);
 
-    // Completar hasta la longitud deseada
+    
     for (let i = 4; i < longitudPass; i++) {
         password += getrandomCharacter(pool);
     }
 
-    // Mezclar para eliminar patrón
+    
     password = mezclar(password);
 
-    // Obtener el elemento del DOM y mostrar la contraseña
+    
     const mostrarPassword = document.getElementById("mostrarPassword");
-    mostrarPassword.innerText = password; // o .innerHTML = password;
+    mostrarPassword.innerText = password; 
 }
 
 function getrandomCharacter(str) {
