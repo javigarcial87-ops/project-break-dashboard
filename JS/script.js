@@ -3,52 +3,57 @@ console.log("Empezamos!!")
 
 
 //<-------------------------------CONTRASEÑA SEGURA-------------------------------------------------------->
-function generarPass(){
-    const longitudPass = 16
-    if(longitudPass<12||longitudPass>50){
-        alert("la longitud debe estar entre 12 y 50")
-        return
+// script.js
+
+function generarPass() {
+    const longitudPass = parseInt(document.getElementById("longitud").value);
+
+    if (longitudPass < 12 || longitudPass > 50) {
+        alert("La longitud debe estar entre 12 y 50");
+        return;
     }
 
+    let Mayus   = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+    let Minus   = "abcdefghijklmnñopqrstuvwxyz";
+    let number  = "0123456789";
+    let simbols = "!@#$%^&*()-_=+";
 
-        let Mayus ="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-        let Minus ="abcdefghijklmnñopqrstuvwxyz";
-        let number ="0123456789";
-        let simbols = "!@#$%^&*()-_=+";
+    let pool = Mayus + Minus + number + simbols;
 
-        let pool = Mayus + Minus + number+ simbols;
+    let password = "";
 
-    let password =""
-    
-    password += getrandomCharacter(Mayus)
-    password += getrandomCharacter(Minus)
-    password += getrandomCharacter(number)
-    password += getrandomCharacter(simbols)
+    // Asegurar al menos uno de cada tipo
+    password += getrandomCharacter(Mayus);
+    password += getrandomCharacter(Minus);
+    password += getrandomCharacter(number);
+    password += getrandomCharacter(simbols);
 
-
-    for(let i = 4; i < longitudPass; i++){
-        password += getrandomCharacter(pool)
-        
+    // Completar hasta la longitud deseada
+    for (let i = 4; i < longitudPass; i++) {
+        password += getrandomCharacter(pool);
     }
 
-    password = mezclar(password)
+    // Mezclar para eliminar patrón
+    password = mezclar(password);
 
-    mostrarPassword.innerHTML(password)
-
+    // Obtener el elemento del DOM y mostrar la contraseña
+    const mostrarPassword = document.getElementById("mostrarPassword");
+    mostrarPassword.innerText = password; // o .innerHTML = password;
 }
-        function getrandomCharacter(str) {
-            return str[Math.floor(Math.random()*str.length)]
 
-        }
+function getrandomCharacter(str) {
+    return str[Math.floor(Math.random() * str.length)];
+}
 
-        function mezclar(str){
-            let arr=str.split("")
-            for (let i= arr.length-1; i>0; i--) {
-                let j =Math.floor(Math.random()*(i+1))
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-            }
-            return arr.join("")
-        }
+function mezclar(str) {
+    let arr = str.split("");
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join("");
+}
+
         
 //<-----------------------------------MIS LINKS FAVORITOS------------------------------------------------------------->
 
