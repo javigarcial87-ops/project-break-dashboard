@@ -87,14 +87,14 @@ function showTime(){
         function password() {
             const caracteres = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%^&*()-_=+";
             const maxLength = 16;
-            let contrasena ="";
+            let password ="";
 
             for (let i =0; i < maxLength; i++) {
                 let randomPass = Math.floor(Math.random() * caracteres);
-                contrasena = caracteres[randomPass];
+                password = caracteres[randomPass];
             }
 
-            document.getElementById("contrasena").value= contrasena
+            document.getElementById("contrasena").value= password
 
 
         }
