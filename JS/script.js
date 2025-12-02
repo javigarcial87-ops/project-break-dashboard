@@ -72,6 +72,13 @@ function showTime(){
 
 
 //<-------------------------------CONTRASEÑA SEGURA-------------------------------------------------------->
+function generarPass(){
+    const longitudPass = 16
+    if(longitudPass<12||longitudPass>50){
+        alert("la longitud debe estar entre 12 y 50")
+        return
+    }
+}
 
 
 
@@ -81,7 +88,7 @@ function showTime(){
         let Minus =["abcdefghijklmnñopqrstuvwxyz"];
         let number =["0123456789"];
         let simbols = ["!@#$%^&*()-_=+"];
-
+        let pool = Mayus + Minus + numbe+ simbols;
 
 
         function password() {
