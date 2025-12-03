@@ -19,7 +19,7 @@ const urlCook =  "https://www.allrecipes.com/"
 
 //<------------------------------------CLIMA/TEMPORAL------------------------------------------------------------->
 
-const urlClima = "https://api.weatherapi.com/v1"
+const urlClima = "https://api.weatherapi.com/v1/forecast.json?key=&q=Madrid&days=7&aqi=no&alerts=no"
 
 const apiKey = "7839efe96b9c4409974201359252611"
 
