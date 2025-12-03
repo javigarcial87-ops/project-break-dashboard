@@ -21,9 +21,14 @@ const urlCook =  "https://www.allrecipes.com/"
 
 const urlClima = "https://api.weatherapi.com/v1/forecast.json?key=&q=Madrid&days=7&aqi=no&alerts=no"
 
-const apiKey = "7839efe96b9c4409974201359252611"
+const API_KEY = "7839efe96b9c4409974201359252611"
 
-const 
+const CITY = "Madrid"
+
+const DAYS = 7
+
+
+
 
 
 
