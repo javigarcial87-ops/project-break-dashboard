@@ -41,6 +41,7 @@ async function getclimaActualMadrid (){
     }
 
     const data= await response.json()
+    console.log(data)
     return data
 }
 
@@ -58,7 +59,32 @@ async function getClimaSemanal (){
     return data
 }
 
+function renderClimaActual(data){
+    climaAhoraContainer.innerHTML=""
+    const html =`
+    <h2>Tiempo de hoy en Madrid</h2>
+    <p>${data.current.temp_c} ºC</p>
+    <p>${data.current.condition.text}</p>
+    `
+    climaAhoraContainer.innerHTML= html
+}
 
+function renderClimaSemana (data) {
+    climaSemanaContainer.innerHTML =""
+    const dias = data.forecast.forecastday
+
+    const htmlDias = dias.map((d)=>{
+        return `
+        <article>`
+    })
+}
+
+
+
+
+
+getclimaActualMadrid()
+getClimaSemanal()
 
 
 
