@@ -41,7 +41,7 @@ async function getclimaActualMadrid (){
     }
 
     const data= await response.json()
-    console.log(data)
+    
     return data
 }
 
@@ -75,16 +75,50 @@ function renderClimaSemana (data) {
 
     const htmlDias = dias.map((d)=>{
         return `
-        <article>`
-    })
+        <article class="day">
+        <h3>${d.date}</h3>
+        <p>Max:${d.day.maxtemp_c}</p>
+        <p>Min:${d.day.mintemp_c}</p>
+        <p>${d.day.condition.text}</p>
+        </article>`
+    }).join("")
+
+    climaSemanaContainer.innerHTML= `
+       <h2>Pronóstico${DAYS} días</h2> 
+        ${htmlDias}
+    `
+
+}
+
+async function cargarMadrid() {
+    try{
+        climaAhoraContainer.innerHTML ="Cargando..."
+        climaSemanaContainer.innerHTML = ""
+
+        const[actual,forecast]=await Promise.all([
+           getclimaActualMadrid()
+           getClimaSemanal() 
+        ])
+
+        renderClimaActual(actual)
+        renderClimaSemana(forecast)
+    } catch (err) {
+        console.error("Error al cargar", err)
+
+    }
 }
 
 
 
 
 
-getclimaActualMadrid()
-getClimaSemanal()
+
+
+
+
+
+// getclimaActualMadrid()
+// getClimaSemanal()
 
 
 
