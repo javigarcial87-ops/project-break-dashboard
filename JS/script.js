@@ -84,7 +84,7 @@ function renderClimaSemana (data) {
     }).join("")
 
     climaSemanaContainer.innerHTML= `
-       <h2>Pronóstico${DAYS} días</h2> 
+       <h2>Pronóstico ${DAYS} días</h2> 
         ${htmlDias}
     `
 
@@ -96,19 +96,20 @@ async function cargarMadrid() {
         climaSemanaContainer.innerHTML = ""
 
         const[actual,forecast]=await Promise.all([
-           getclimaActualMadrid()
+           getclimaActualMadrid(),
            getClimaSemanal() 
         ])
 
         renderClimaActual(actual)
         renderClimaSemana(forecast)
     } catch (err) {
-        console.error("Error al cargar", err)
-
+        errorContainer.hidden= false
+        errorContainer.textContent = "Error al cargar Madrid"
+        console.error(err)
     }
 }
 
-
+cargarMadrid()
 
 
 
