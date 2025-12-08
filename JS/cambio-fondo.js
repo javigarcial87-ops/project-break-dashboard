@@ -1,5 +1,7 @@
 console.log("empezamos!!");
 
+//---------------------------IMAGENES QUE CAMBIAN DE FONDO------------------------------------------------------------------------------------------->
+
 const imagenes = ["img/brillo_1.jpg","img/brillo_2.jpg","img/clear_1.jpg","img/landing_fondo_1.jpg","img/landing_fondo_3.jpg","img/nebulosa_1.jpg","img/nebulosa_3.jpg","img/nubes_cielo_1.jpg","img/nubes_cielo_6.jpg","img/nubes_cielo_4.jpg"]
 
 let index = 0;
@@ -23,7 +25,7 @@ function cambiarFondoImagen() {
 setInterval(cambiarFondoImagen,10000);
 cambiarFondoImagen();
 
-
+//------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 
