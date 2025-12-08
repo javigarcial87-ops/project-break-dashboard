@@ -20,7 +20,6 @@ function cambiarFondoImagen() {
 }
 
 
-
 setInterval(cambiarFondoImagen,10000);
 cambiarFondoImagen();
 
