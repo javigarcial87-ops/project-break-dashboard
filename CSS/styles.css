@@ -66,10 +66,34 @@ table {
 
 #widget-reloj{
     
-    width: 500px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.323);
 
+
+}
+#watch{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 33, 34);
+    width: 500px;
+    color: aqua;
+    margin-top: 60px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    align-items: center;
+    text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+#frase{
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#calendar{
+    color: bisque;
+    font-size: 24px;
+    text-shadow: 2px 2px 20px  rgba(0, 0, 0, 0.33);
 }
 
 #widget-clima{
@@ -78,8 +102,8 @@ table {
     background-color: rgba(0, 0, 0, 0.323);
 }
 .day{
-    display: inline-table;
-    padding: 3px;
+    display: inline-block ;
+    padding: 30px;
 }
 #widget-password{
     width: 500px;
@@ -101,4 +125,5 @@ h1{
 
 h2{
     font-size: 40px;
+    text-shadow: 2px 2px 20px  rgba(0, 0, 0, 0.33);
 }
