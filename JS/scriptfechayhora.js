@@ -31,10 +31,10 @@ function getMensajeReloj (){
 
 
 function showTime(){
-    let date = new Date()
-    let hh = date.getHours()
-    let mm = date.getMinutes()
-    let ss = date.getSeconds()
+    let date = new Date();
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
 
     hh=(hh < 10) ? "0" + hh : hh;
     mm=(mm < 10) ? "0" + mm : mm;

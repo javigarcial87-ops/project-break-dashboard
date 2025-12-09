@@ -6,10 +6,7 @@ function generarPass() {
     //     return;
     // }
 
-    let Mayus   = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-    let Minus   = "abcdefghijklmnñopqrstuvwxyz";
-    let number  = "0123456789";
-    let simbols = "!@#$%^&*()-_=+";
+      
 
     let pool = Mayus + Minus + number + simbols;
 

@@ -8,8 +8,56 @@
 </head>
 <body>
     <h1>Mi DashBoard</h1>
-    
-<!-- <script src="JS/script.js"></script> -->
+
+    <div id="DashBoard">
+        <section id="widget-reloj">
+
+            <h2>Fecha y hora</h2>
+            <div id="watch"></div>
+            <div id="frase"></div>
+            <div id="calendar"></div>
+
+
+        </section>
+        <section id="widget-clima">
+
+            <h2>El clima en Madrid</h2>
+            <div id="climaAhoraContainer"></div>
+            <div id="climaSemanaContainer"></div>
+            <div id="error" role="alert" hidden></div>
+
+        </section>
+        <section id="widget-password">
+
+
+            <h2>GENERADOR DE CONTRASEÑAS SEGURAS</h2>
+            <input type="number" id="longitud" min="12" max="50">
+            <button onclick="generarPass()">Generar contraseña</button>
+            <p id="mostrarPassword" style="font-size: 20px; font-weight: bold;"></p>
+
+        </section>
+        <section id="widget-links">
+            <input id="inputTitulo" placeholder="Título del link">
+            <input id="inputURL" placeholder="URL del link">
+            <button id="btnAdd">Añade Links</button>
+
+    <div id="listaLinks"></div>
+
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+
 <script src="JS/cambio-fondo.js"></script>
+<script src="JS/scriptLinks.js"></script>
+<script src="JS/scriptClima.js"></script>
+<script src="JS/scriptfechayhora.js"></script>
+<script src="JS/scriptpasswordSeguro.js"></script>
 </body>
 </html>
