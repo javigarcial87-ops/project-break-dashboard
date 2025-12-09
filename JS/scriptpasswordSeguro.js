@@ -1,12 +1,15 @@
 function generarPass() {
     const longitudPass = parseInt(document.getElementById("longitud").value);
 
-    // if (longitudPass < 12 || longitudPass > 50) {
-    //     alert("La longitud debe estar entre 12 y 50");
-    //     return;
-    // }
+    if (longitudPass < 12 || longitudPass > 50) {
+        alert("La longitud debe estar entre 12 y 50");
+        return;
+    }
 
-      
+    const Mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const Minus = "abcdefghijklmnopqrstuvwxyz";
+    const number = "0123456789";
+    const simbols = "!@#$%^&*()_+-=[]{}|;:,.<>?/"; 
 
     let pool = Mayus + Minus + number + simbols;
 
