@@ -62,11 +62,12 @@ function renderClimaSemana(data) {
     const htmlDias = dias.map((d) => {
         return `
             <article class="day">
+                <img src="https:${d.day.condition.icon}" alt="${d.day.condition.text}">
                 <h3>${d.date}</h3>
                 <p>Max: ${d.day.maxtemp_c} ºC</p>
                 <p>Min: ${d.day.mintemp_c} ºC</p>
                 <p>${d.day.condition.text}</p>
-                <img src="https:${d.day.condition.icon}" alt="${d.day.condition.text}">
+                
             </article>`;
     }).join("");
 
