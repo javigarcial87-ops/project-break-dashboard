@@ -47,7 +47,7 @@ async function getClimaSemanal (){
 function renderClimaActual(data){
     climaAhoraContainer.innerHTML = "";
     const html = `
-        <h3>Tiempo de hoy en Madrid</h3>
+        <h3>Para hoy</h3>
         <p>${data.current.temp_c} ºC</p>
         <p>${data.current.condition.text}</p>
         <img src="https:${data.current.condition.icon}" alt="${data.current.condition.text}">
@@ -72,7 +72,7 @@ function renderClimaSemana(data) {
     }).join("");
 
     climaSemanaContainer.innerHTML = `
-        <h3>Pronóstico para ${DAYS} días</h3> 
+        <h3>Próximos ${DAYS} días</h3> 
         ${htmlDias}
     `;
 }
