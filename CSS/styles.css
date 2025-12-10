@@ -97,7 +97,8 @@ table {
 }
 
 #widget-clima{
-    width: 500px;
+    width: 800px;
+    height: 600px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.323);
 }

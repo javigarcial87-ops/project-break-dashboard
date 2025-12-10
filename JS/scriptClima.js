@@ -10,7 +10,7 @@ const API_KEY = "7839efe96b9c4409974201359252611"
 const baseUrl = "https://api.weatherapi.com/v1" 
 const CITY = "Madrid"
 
-const DAYS = 7
+const DAYS = 3
 
 const climaAhoraContainer = document.getElementById("climaAhoraContainer")
 const climaSemanaContainer = document.getElementById("climaSemanaContainer")
@@ -45,34 +45,35 @@ async function getClimaSemanal (){
 }
 
 function renderClimaActual(data){
-    climaAhoraContainer.innerHTML=""
-    const html =`
-    <h3>Tiempo de hoy en Madrid</h3>
-    <p>${data.current.temp_c} ºC</p>
-    <p>${data.current.condition.text}</p>
-    `
-    climaAhoraContainer.innerHTML= html
+    climaAhoraContainer.innerHTML = "";
+    const html = `
+        <h3>Tiempo de hoy en Madrid</h3>
+        <p>${data.current.temp_c} ºC</p>
+        <p>${data.current.condition.text}</p>
+        <img src="https:${data.current.condition.icon}" alt="${data.current.condition.text}">
+    `;
+    climaAhoraContainer.innerHTML = html;
 }
 
-function renderClimaSemana (data) {
-    climaSemanaContainer.innerHTML =""
-    const dias = data.forecast.forecastday
+function renderClimaSemana(data) {
+    climaSemanaContainer.innerHTML = "";
+    const dias = data.forecast.forecastday;
 
-    const htmlDias = dias.map((d)=>{
+    const htmlDias = dias.map((d) => {
         return `
-        <article class="day">
-        <h3>${d.date}</h3>
-        <p>Max:${d.day.maxtemp_c}</p>
-        <p>Min:${d.day.mintemp_c}</p>
-        <p>${d.day.condition.text}</p>
-        </article>`
-    }).join("")
+            <article class="day">
+                <h3>${d.date}</h3>
+                <p>Max: ${d.day.maxtemp_c} ºC</p>
+                <p>Min: ${d.day.mintemp_c} ºC</p>
+                <p>${d.day.condition.text}</p>
+                <img src="https:${d.day.condition.icon}" alt="${d.day.condition.text}">
+            </article>`;
+    }).join("");
 
-    climaSemanaContainer.innerHTML= `
-       <h3>Pronóstico para${DAYS} días</h3> 
+    climaSemanaContainer.innerHTML = `
+        <h3>Pronóstico para ${DAYS} días</h3> 
         ${htmlDias}
-    `
-
+    `;
 }
 
 async function cargarMadrid() {
