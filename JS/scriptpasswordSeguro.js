@@ -31,7 +31,7 @@ function generarPass() {
 
     
     const mostrarPassword = document.getElementById("mostrarPassword");
-    mostrarPassword.innerText = "contraseña generada :" + password; 
+    mostrarPassword.innerText = password; 
 }
 
 function getrandomCharacter(str) {
