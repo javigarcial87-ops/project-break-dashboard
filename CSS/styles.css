@@ -51,6 +51,9 @@ table {
     color: aliceblue;
 }
 
+
+
+
 #DashBoard{
     display: flex;
     flex-wrap: wrap;
@@ -118,8 +121,6 @@ table {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.323);
 }
-
-
 
 h1{
     font-size: 72pt;
