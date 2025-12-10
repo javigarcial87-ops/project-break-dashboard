@@ -109,6 +109,8 @@ table {
     background-color: rgba(0, 0, 0, 0.323);
 }
 .day{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.38);
     display: inline-block ;
     padding: 30px;
 }
@@ -129,6 +131,20 @@ table {
     box-sizing: content-box;
 }
 
+#longitud{
+    width: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+#btn-pass{
+    font-size: 24px;
+    background-color: rgb(23, 213, 213);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 20px;
+}
 
 
 
@@ -137,6 +153,17 @@ table {
     height: 600px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.565);
+}
+
+a{
+    font-size: 14px;
+    font-weight: bold;
+    color: azure;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin-top: 20px;
 }
 
 h1{

@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             a.rel = "noopener noreferrer";
 
             const btnEliminar = document.createElement("button");
-            btnEliminar.textContent = "Eliminar";
+            btnEliminar.textContent = " " + "Eliminar";
 
             btnEliminar.addEventListener("click", () => {
                 eliminarLinkPorID(link.id);
