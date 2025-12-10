@@ -41,8 +41,8 @@ function showTime(){
     ss= (ss < 10) ? "0" + ss :ss;
 
     let time = `${hh}:${mm}:${ss}`   
-    document.getElementById("watch").innerHTML=time
-    document.getElementById("frase").innerHTML=getMensajeReloj()
+    document.getElementById("watch").innerHTML= time
+    document.getElementById("frase").innerHTML= getMensajeReloj()
     }
 
  //<----------------------------------CALENDARIO Y FECHAS------------------------------------------------------->     
