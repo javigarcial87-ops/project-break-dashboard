@@ -67,7 +67,7 @@ table {
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     gap: 10px;
    
 }
@@ -85,7 +85,7 @@ table {
     background-color: rgb(33, 33, 34);
     width: 500px;
     color: rgb(0, 255, 85);
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 20px;
     font-weight: light;
     font-size: 60px;
@@ -140,19 +140,19 @@ table {
     width: 500px;
     height: 200px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.323);
+    background-color: rgba(0, 0, 0, 0.581);
 }
 #mostrarPassword{
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
     color: rgb(233, 225, 13);
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 #longitud{
     width: 100px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     font-size: 24px;
 }
@@ -192,6 +192,7 @@ a{
 li{
     list-style: none;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 h1{
