@@ -17,7 +17,7 @@ const climaSemanaContainer = document.getElementById("climaSemanaContainer")
 const errorContainer = document.getElementById("error")
 
 async function getclimaActualMadrid (){
-    const url =`${baseUrl}/current.json?key=${API_KEY}&q=${CITY}&aqi=no`
+    const url =`${baseUrl}/current.json?key=${API_KEY}&q=${CITY}&aqi=no&lang=es`
     const response =await fetch(url)
 
     if (!response.ok) {
@@ -31,8 +31,8 @@ async function getclimaActualMadrid (){
 }
 
 async function getClimaSemanal (){
-    const url =`${baseUrl}/forecast.json?key=${API_KEY}&q=${CITY}&days=${DAYS}&aqi=no&alerts=no`
-    const response =await fetch(url)
+    const url =`${baseUrl}/forecast.json?key=${API_KEY}&q=${CITY}&days=${DAYS}&aqi=no&alerts=no&lang=es`
+    const response = await fetch(url)
 
     if (!response.ok) {
         const text = await response.text()
@@ -50,7 +50,7 @@ function renderClimaActual(data){
         <h3>Para hoy</h3>
         <p>${data.current.temp_c} ºC</p>
         <p>${data.current.condition.text}</p>
-        <img src="https:${data.current.condition.icon}" alt="${data.current.condition.text}">
+        <img src="https:${data.current.condition.icon}" class="icon" alt="${data.current.condition.text}">
     `;
     climaAhoraContainer.innerHTML = html;
 }
@@ -62,7 +62,7 @@ function renderClimaSemana(data) {
     const htmlDias = dias.map((d) => {
         return `
             <article class="day">
-                <img src="https:${d.day.condition.icon}" alt="${d.day.condition.text}">
+                <img src="https:${d.day.condition.icon}" class="icons" alt="${d.day.condition.text}">
                 <h3>${d.date}</h3>
                 <p>Max: ${d.day.maxtemp_c} ºC</p>
                 <p>Min: ${d.day.mintemp_c} ºC</p>
