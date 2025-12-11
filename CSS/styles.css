@@ -395,7 +395,7 @@ h2{
     }
 
     .day{
-        width: 100%;
+        width: 95%;
         margin: 10px 0;
     }
 
@@ -410,7 +410,7 @@ h2{
     }
 
     #inputTitulo, #inputURL{
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
     }
 
@@ -424,6 +424,7 @@ h2{
         width: 100%;
         text-align: center;
     }
+    
 
 }
 
