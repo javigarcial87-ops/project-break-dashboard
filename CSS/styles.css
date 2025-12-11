@@ -92,7 +92,8 @@ table {
     justify-content: center;
     text-align: center;
     background-color: rgba(33, 33, 34, 0.395);
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     color: rgb(255, 255, 255);
     margin-top: 50px;
     margin-bottom: 80px;
@@ -135,7 +136,8 @@ table {
 
 #widget-clima{
     
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     height: 450px;
     padding: 20px;
     border-radius: 20px;
@@ -144,7 +146,7 @@ table {
     transition: all 0.30s ease-in-out;
 }
 #widget-clima:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 2px 2px 40px 2px rgb(91, 207, 250);
 
 }
@@ -183,7 +185,8 @@ font-size: 24px;
 
 #widget-password{
     text-align: center;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     height: 200px;
     padding: 20px;
     border-radius: 20px;
@@ -192,7 +195,7 @@ font-size: 24px;
 }
 
 #widget-password:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 2px 2px 40px 2px rgb(91, 207, 250);
 
 }
@@ -206,6 +209,10 @@ font-size: 24px;
     margin-top: 20px;
     color: rgb(233, 225, 13);
     box-sizing: border-box;
+}
+
+#mostrarPassword:hover{
+    color: aqua;
 }
 
 #longitud{
@@ -233,7 +240,8 @@ font-size: 24px;
 #widget-links{
     margin-top: 20px;
     margin-bottom: 80px;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     height: 500px;
     padding: 20px;
     border-radius: 20px;
@@ -242,7 +250,7 @@ font-size: 24px;
 }
 
 #widget-links:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
     box-shadow: 2px 2px 40px 2px rgb(91, 207, 250);
 
 }
@@ -359,8 +367,63 @@ h2{
 /* _____________________________________________________________________________________________________________________________________________________ */
 
 @media (max-width: 768px) {
-    body {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #watch{
+        font-size: 40px;
+        width: 90%;
         padding: 10px;
     }
+
+    #calendar,#frase{
+        width: 90%;
+        font-size: 22px;
+    }
+
+    #widget-clima, #widget-password, #widget-links{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .day{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #longitud{
+        width: 80px;
+        font-size: 18px;
+    }
+
+    #btn-pass{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #inputTitulo, #inputURL{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #listaLinks li{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    #listaLinks button{
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
