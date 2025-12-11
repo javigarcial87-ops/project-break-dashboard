@@ -92,9 +92,10 @@ table {
     justify-content: center;
     text-align: center;
     background-color: rgba(33, 33, 34, 0.395);
-    width: 500px;
-    color: rgb(0, 255, 85);
-    margin-top: 10px;
+    width: 600px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 80px;
     padding: 20px;
     font-family: Orbitron;
     font-size: 60px;
@@ -103,11 +104,12 @@ table {
 }
 
 #frase{
+    width: 600px;
     font-family: Orbitron;
     background-color:rgba(33, 33, 34, 0.623) ;
     border-radius: 30px;
     text-align: center;
-    color: rgb(212, 76, 76);
+    color: rgb(50, 203, 214);
     font-size: 30px;
     margin-top: 20px;
     font-weight: bolder;
@@ -117,8 +119,8 @@ table {
     font-family: Orbitron;
     font-weight: bold;
     background-color:rgba(33, 33, 34, 0.668) ;
-    text-align: left;
-    color: rgb(0, 255, 85);
+    text-align: center;
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     margin-top: 10px;
     font-size: 28px;
@@ -132,7 +134,7 @@ table {
 /* <-----------------------------CLIMA CIUDAD----------------------------------------------------------------> */
 
 #widget-clima{
-    margin: 0 auto;
+    
     width: 600px;
     height: 450px;
     padding: 20px;
@@ -146,15 +148,25 @@ table {
     box-shadow: 2px 2px 40px 2px rgb(91, 207, 250);
 
 }
+
+#climaAhoraContainer, h2{
+font-size: 24px;
+
+
+}
+
+
+
 .day{
     background: rgba(255, 255, 255, 0.163);
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 4px;
     display: inline-block;
     text-align: center;
     color: aliceblue;
     padding: 10px;
+    box-shadow: 1px 1px 15px 1px rgba(254, 255, 255, 0.367);
 }
 .icons{
     width: 50px;
