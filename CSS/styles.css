@@ -76,6 +76,54 @@ table {
     gap: 40px;                
     width: 100%;
 }
+/* _____________________________________________________________________________________________________________ */
+
+
+/* <-------------------------------ELEMENTOS DEL NAV----------------------------------------------------------> */
+#links-widgets{
+    justify-content: first baseline;
+}
+
+#links-widgets ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+
+#links-widgets ul li a i{
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+    color: #0078ff;
+    text-shadow: 1px 1px 1px black;
+}
+
+#links-widgets ul li a i:hover{
+    color: yellow;
+    
+}
+
+.home-btn {
+    width: 100%;
+    text-align: center; 
+    margin-top: 100px;    
+   
+}
+
+.home-btn a i{
+    font-size: 40px;
+    text-shadow: 1px 1px 1px black;
+    transition: all .2s ease-in-out;
+    color: #0078ff;
+}
+
+.home-btn a i:hover{
+    color: yellow;
+}
+
+/* _____________________________________________________________________________________________________________ */
+
 
 /* <-------------------------RELOJ, FECHA Y FRASE--------------------------------------------------------> */
 #widget-reloj{
@@ -89,14 +137,14 @@ table {
 }
 #watch{
     
-    justify-content: center;
+    
     text-align: center;
     background-color: rgba(33, 33, 34, 0.395);
     width: 90%;
-    max-width: 600px;
+    max-width: 620px;
     color: rgb(255, 255, 255);
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     padding: 20px;
     font-family: Orbitron;
     font-size: 60px;
@@ -123,7 +171,6 @@ table {
     text-align: center;
     color: rgb(255, 255, 255);
     border-radius: 30px;
-    margin-top: 10px;
     font-size: 28px;
     text-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.33);
     padding: 20px;
@@ -229,6 +276,7 @@ font-size: 24px;
     color: rgb(255, 255, 255);
     border-radius: 0px 20px 20px 0px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* ________________________________________________________________________________________________________________________________ */
@@ -289,6 +337,7 @@ font-size: 24px;
     border-radius: 0px 20px 20px 0px;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 #listaLinks {
@@ -368,6 +417,7 @@ h2{
 
 @media (max-width: 768px) {
     h1 {
+        justify-content: center;
         font-size: 40px;
         text-align: center;
         margin: 20px 0;
@@ -378,12 +428,14 @@ h2{
     }
 
     #watch{
+        justify-content: center;
         font-size: 40px;
         width: 90%;
         padding: 10px;
     }
 
     #calendar,#frase{
+        justify-content: center;
         width: 90%;
         font-size: 22px;
     }
@@ -425,6 +477,9 @@ h2{
         text-align: center;
     }
     
-
+    #links-widgets ul{
+        justify-content: center;
+    }
+   
 }
 
